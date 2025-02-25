@@ -40,7 +40,7 @@ option {
 
 .logo {
     font-size: 2rem;
-    color: rgb(195, 56, 167);
+    color: rgb(196, 41, 149);
 }
 
 .navbar ul {
@@ -91,32 +91,3 @@ option {
     color: white;
     background-color: black;
 }
-
-/*barre du haut*/
-/* Styles globaux */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #141414;
-    color: white;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Bande de navigation */
-  .banner {
-    background: linear-gradient(90deg, #141414, #333);
-    padding: 15px 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  /* Conteneur de la barre de navigation */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Logo */
