@@ -1,0 +1,122 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    position: relative;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    display: flex;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+option {
+    position: relative;
+}
+
+.banner {
+    width: 1495px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(195, 56, 167);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: rgb(196, 41, 149);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.titre {
+    margin-top: 50px;
+}
+
+.content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn-large {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+option {
+    color: white;
+    background-color: black;
+}
+
+/*barre du haut*/
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Bande de navigation */
+  .banner {
+    background: linear-gradient(90deg, #141414, #333);
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Conteneur de la barre de navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
