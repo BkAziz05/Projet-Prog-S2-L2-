@@ -91,3 +91,74 @@ option {
     color: white;
     background-color: black;
 }
+
+/*barre du haut*/
+/* Barre de navigation encadrée */
+.navbar-container {
+    background: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
+    border: 2px solid #ff0080; /* Bordure rose (ou la couleur que tu veux) */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style de la navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff0080;
+    padding-left: 20px;
+}
+
+/* Liens du menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c71f81;
+}
+
+/* Bouton Se connecter */
+.btn {
+    background: #d41977;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ce1085;
+}
