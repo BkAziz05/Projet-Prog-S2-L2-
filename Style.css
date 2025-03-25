@@ -1,41 +1,18 @@
-h1 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-h3 {
-    position: relative;
-    font-family: Arial, sans-serif;
-    text-align: left;
-    display: flex;
-}
-
 body {
-    background: black;
-    color: white;
-    text-align: left;
     margin: 0;
     padding: 0;
-}
-
-option {
-    position: relative;
-}
-
-.banner {
-    width: 1495px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: rgb(0, 0, 0);
+    color: white;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .logo {
@@ -46,121 +23,89 @@ option {
 .navbar ul {
     list-style: none;
     display: flex;
-}
-
-.navbar ul li {
-    margin: 0 15px;
+    gap: 20px;
 }
 
 .navbar ul li a {
-    color: white;
+    color: rgb(248, 243, 243);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5;
 }
 
 .btn {
     background: rgb(196, 41, 149);
     padding: 10px 20px;
-    color: white;
+    color: rgb(233, 230, 230);
     text-decoration: none;
     border-radius: 5px;
 }
 
-.content {
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 100px;
+    overflow: hidden;
 }
 
-.titre {
-    margin-top: 50px;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.6);
 }
 
-.content h2 {
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
 }
 
 .btn-large {
     font-size: 1.5rem;
     padding: 15px 30px;
-    margin-top: 20px;
+    margin-top: 15px;
     display: inline-block;
 }
 
-option {
-    color: white;
-    background-color: black;
+.background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 15s infinite linear;
 }
 
-/*barre du haut*/
-/* Barre de navigation encadrée */
+.search-container {
+    position: relative;
+
+}
+
 .navbar-container {
     background: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
     border: 2px solid #ff0080; /* Bordure rose (ou la couleur que tu veux) */
     border-radius: 10px; /* Coins arrondis */
     padding: 10px;
     margin: 10px auto;
-    max-width: 95%;
+    max-width: 93%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-/* Style de la navigation */
-.navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-/* Logo */
-.logo {
-    font-size: 25px;
-    font-weight: bold;
-    color: #ff0080;
-    padding-left: 20px;
-}
-
-/* Liens du menu */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #c71f81;
-}
-
-/* Bouton Se connecter */
-.btn {
-    background: #d41977;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 20px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ce1085;
 }
 
 
@@ -175,90 +120,75 @@ option {
 a{
     text-decoration: none;
 }
+
 img{
     width: 100%;
     display: block;
 }
-.wrapper{
-    min-height: 100vh;
-    background-color: black;
-}
-.wrapper .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
+
+/*Position de la proposition des films*/
 .search-container{
-    background-color: black;
-    height: 180px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    height: 10px;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .search-element{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
     align-items: stretch;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     position: relative;
 }
+
+/*Style du titre et année dans la barre de recherche*/
 .search-element h3{
     -ms-flex-item-align: center;
     align-self: center;
-    margin-right: 1rem;
+    margin-right: 10px;
     font-size: 2rem;
-    color: #fff;
+    color: white;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
+
+/*Barre de recherche*/
 .search-element .form-control{
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    border: none;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    outline: none;
-    color: black;
     width: 350px;
+    background-color: black;
+    color : white;
+    border : 2px solid deeppink;
 }
+
+/*position pour que la liste des films apparaissent sous la barre de recherche*/
 .search-list{
     position: absolute;
     right: 0;
     top: 100%;
-    max-height: 500px;
+    max-height: 250px;
     overflow-y: scroll;
     z-index: 10;
 }
+
+/*Dans la barre de recherche, c'est la mise en forme de la liste des films */
 .search-list .search-list-item{
     background-color: black;
     padding: 0.5rem;
     border-bottom: 1px solid black;
     width: calc(350px - 8px);
-    color: #fff;
+    color: white;
     cursor: pointer;
     -webkit-transition: background-color 200ms ease;
     -o-transition: background-color 200ms ease;
     transition: background-color 200ms ease;
 }
+
+/*Pour qu'une couleur apparait losque l'on passe sur un film*/
 .search-list .search-list-item:Hover{
-    background-color: black;
+    background-color: #555454;
 }
+
+/*Pour que titre et année soit à coté de l'affiche*/
 .search-list-item{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -267,60 +197,63 @@ img{
     -ms-flex-align: center;
     align-items: center;
 }
+
+/*Taille petite affiche sur le coté des titres*/
 .search-item-thumbnail img{
     width: 40px;
     margin-right: 1rem;
 }
+
+/*taille de l'année et du titre de chaque film qui apparait*/
 .search-item-info h3{
     font-weight: 600;
     font-size: 1rem;
 }
-.search-item-info p{
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    opacity: 0.6;
-}
 
-/* thumbnail */
+/*Epaisseur de la barre déroulante des films */
 .search-list::-webkit-scrollbar{
     width: 8px;
 }
-.search-list::-webkit-scrollbar-track{
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
+
+/*Forme de la barre déroulante*/
 .search-list::-webkit-scrollbar-thumb{
     background-color: deeppink;
-    outline: none;
+    /*pour avoir les bords arrondis*/
     border-radius: 10px;
 }
 
 /* js related class */
+/*Pour que la sélection des films disparait après avoir appuyer sur un film*/
 .hide-search-list{
     display: none;
 }
 
-/* movie result */
+/* position de l'affiche */
 .result-container{
-    padding: 3rem 0;
+    padding-top: 3rem;
 }
+
+/*Taille de l'affiche + bordure autour*/
 .movie-poster img{
     max-width: 300px;
     margin: 0 auto;
     border: 4px solid white;
 }
+
+/* position du descriptif + couleur*/
 .movie-info{
     text-align: center;
     color: white;
     padding-top: 3rem;
 }
 
-/* movie info stylings */
+/* style titre du film*/
 .movie-title{
     font-size: 2rem;
     color: deeppink;
 }
+
+/*descriptif (years, ratings & released)*/
 .movie-misc-info{
     list-style-type: none;
     display: -webkit-box;
@@ -331,12 +264,13 @@ img{
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    /*mettre éléments à la suite : */
     justify-content: center;
+    /*Mettre espace autour des éléments*/
     padding: 1rem;
 }
-.movie-info .year{
-    font-weight: 500;
-}
+
+/*descriptif (ratings)*/
 .movie-info .rated{
     background-color: deeppink;
     padding: 0.4rem;
@@ -344,97 +278,77 @@ img{
     border-radius: 3px;
     font-weight: 600;
 }
+
+/*descriptif (realesed)*/
 .movie-info .released{
     font-size: 0.9rem;
     opacity: 0.9;
 }
+
+/*descriptif (writer) espace autour*/
 .movie-info .writer{
     padding: 0.5rem;
     margin: 1rem 0;
 }
+
+/*descriptif (genre) espace autour*/
 .movie-info .genre{
-    background-color: black;
+    background-color: #555454;
+    /*Pour que la bordure s'adapte au texte : */
     display: inline-block;
     padding: 0.5rem;
-    border-radius: 3px;
+    border-radius: 10px;
 }
+
+/*descriptif (plot) espace autour*/
 .movie-info .plot{
+    /*Pour que le texte soit mieux organisé : */
     max-width: 400px;
     margin: 1rem auto;
 }
+
+/*descriptif (langues)*/
 .movie-info .language{
     color: deeppink;
     font-style: italic;
 }
+
+/*descriptif (awards) taille*/
 .movie-info .awards{
     font-weight: 300;
     font-size: 0.9rem;
 }
-.movie-info .awards i{
-    color: deeppink;
-    margin: 1rem 0.7rem 0 0;
-}
-
-@media(max-width: 450px){
-    .logo p{
-        font-size: 1.4rem;
-    }
-    .search-element .form-control{
-        width: 90%;
-        margin: 0 auto;
-        padding: 0.5rem 1rem;
-    }
-    .search-element h3{
-        font-size: 1.4rem;
-    }
-    .search-list{
-        width: 90%;
-        right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
-    }
-    .search-list .search-list-item{
-        width: 100%;
-    }
-    .movie-misc-info{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .movie-misc-info li:nth-child(2){
-        margin: 0.8rem 0;
-    }
-}
 
 @media(min-width: 800px){
-    .search-element{
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
+    /*Espace entre titre et année dans la barre de recherche*/
     .search-element h3{
         margin-bottom: 0;
     }
+
+    /*Pour avoir l'affiche à gauche et le descriptif à droite*/
     .result-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /*Descriptif aligné sur la gauche*/
     .movie-info{
         text-align: left;
         padding-top: 0;
     }
+
+    /*pas d'espace avant Year:*/
     .movie-info .movie-misc-info{
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
         justify-content: flex-start;
         padding-left: 0;
     }
+
+    /*pas d'espace avant Plot:*/
     .movie-info .plot{
         margin-left: 0;
     }
+
+    /*pas d'espace avant Writer:*/
     .movie-info .writer{
         padding-left: 0;
         margin-left: 0;
