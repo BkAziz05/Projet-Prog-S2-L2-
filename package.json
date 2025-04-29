@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "projet-prog",
+  "version": "1.0.0",
+  "description": "Serveur pour SOSFLIX avec API personnalis\u00e9e",
+  "main": "Accueil.js",
+  "scripts": {
+    "start": "node Accueil.js"
+  },
+  "author": "Aziz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.6.1"
+  }
+}
