@@ -2,54 +2,56 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="logo.ico">
     <title>Se connecter</title>
     <!-- Lien pour les logos : -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Bouton.css">
 </head>
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
-                <h1>Créer un compte</h1>
+                <h1>I have an account</h1>
                 <div class="social-container">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-google"></i></a>
                     <a href="#"><i class="fab fa-apple"></i></a>
                 </div>
-                <span>Je n'ai pas de compte</span>
+                <span>I don't have an account</span>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mot de passe">
-                <button type="submit">Créer le compte</button>
+                <input type="password" placeholder="Password">
+                <button type="submit">Create the account</button>
             </form>
         </div>
         <div class="form-container login-container">
             <form action="#">
-                <h1>Se connecter</h1>
+                <h1>Log in</h1>
                 <div class="social-container">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-google"></i></a>
                     <a href="#"><i class="fab fa-apple"></i></a>
                 </div>
-                <span>J'ai un compte</span>
+                <span>I have an account</span>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mot de passe">
-                <button type="submit">Connexion</button>
+                <input type="password" placeholder="Password">
+                <button type="submit">Connection</button>
             </form>
         </div>
-<!-- Les deux différents caches : -->
+
+        <!-- Les deux différents caches : -->
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Vous avez un compte ?</h1>
-                    <p>Connectez-vous</p>
+                    <h1>Do you have an account ?</h1>
+                    <p>Log in</p>
 
-                    <button class="ghost" id="login">Se connecter</button>
+                    <button class="ghost" id="login">Connection</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Pas de compte ? </h1>
-                    <p>Venez changer ça !</p>
-                    <button class="ghost" id="signUp">Inscrivez-vous</button>
+                    <h1>Don't have you an account ?</h1>
+                    <p>Come change that !</p>
+                    <button class="ghost" id="signUp">Inscription</button>
                 </div>
             </div>
         </div>
@@ -57,4 +59,3 @@
 <script src="Bouton.js"></script>
 </body>
 </html>
-
