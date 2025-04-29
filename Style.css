@@ -3,14 +3,14 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: rgb(0, 0, 0);
-    color: white;
+    color:white;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
 }
@@ -23,7 +23,7 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .navbar ul li a {
@@ -34,10 +34,10 @@ body {
 
 .btn {
     background: rgb(196, 41, 149);
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     color: rgb(233, 230, 230);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 .hero {
@@ -66,7 +66,7 @@ body {
 
 .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .hero-content p {
@@ -75,8 +75,8 @@ body {
 
 .btn-large {
     font-size: 1.5rem;
-    padding: 15px 30px;
-    margin-top: 15px;
+    padding: 0.938rem 1.875rem;
+    margin-top: 0.938rem;
     display: inline-block;
 }
 
@@ -97,10 +97,10 @@ body {
 
 .navbar-container {
     background: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
-    border: 2px solid #ff0080; /* Bordure rose (ou la couleur que tu veux) */
-    border-radius: 10px; /* Coins arrondis */
-    padding: 10px;
-    margin: 10px auto;
+    border: 0.125rem solid #ff0080; /* Bordure rose (ou la couleur que tu veux) */
+    border-radius: 0.625rem; /* Coins arrondis */
+    padding: 0.625rem;
+    margin: 0.625rem auto;
     max-width: 93%;
     display: flex;
     align-items: center;
@@ -125,9 +125,10 @@ img{
     display: block;
 }
 
+
 /*Position de la proposition des films*/
 .search-container{
-    height: 10px;
+    height: 0.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +145,7 @@ img{
 .search-element h3{
     -ms-flex-item-align: center;
     align-self: center;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     font-size: 2rem;
     color: white;
     font-weight: 500;
@@ -153,10 +154,10 @@ img{
 
 /*Barre de recherche*/
 .search-element .form-control{
-    width: 350px;
+    width: 21.875rem;
     background-color: pink;
     color : black;
-    border : 2px solid deeppink;
+    border : 0.125rem solid deeppink;
 }
 
 /*position pour que la liste des films apparaissent sous la barre de recherche*/
@@ -164,7 +165,7 @@ img{
     position: absolute;
     right: 0;
     top: 100%;
-    max-height: 250px;
+    max-height: 15.625rem;
     overflow-y: scroll;
     z-index: 10;
 }
@@ -173,8 +174,8 @@ img{
 .search-list .search-list-item{
     background-color: black;
     padding: 0.5rem;
-    border-bottom: 1px solid black;
-    width: calc(350px - 8px);
+    border-bottom: 0.063rem solid black;
+    width: calc(21.875rem - 0.5rem);
     color: white;
     cursor: pointer;
     -webkit-transition: background-color 200ms ease;
@@ -199,7 +200,7 @@ img{
 
 /*Taille petite affiche sur le coté des titres*/
 .search-item-thumbnail img{
-    width: 40px;
+    width: 2.5rem;
     margin-right: 1rem;
 }
 
@@ -211,14 +212,14 @@ img{
 
 /*Epaisseur de la barre déroulante des films */
 .search-list::-webkit-scrollbar{
-    width: 8px;
+    width: 0.5rem;
 }
 
 /*Forme de la barre déroulante*/
 .search-list::-webkit-scrollbar-thumb{
     background-color: deeppink;
     /*pour avoir les bords arrondis*/
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /* js related class */
@@ -234,9 +235,9 @@ img{
 
 /*Taille de l'affiche + bordure autour*/
 .movie-poster img{
-    max-width: 300px;
+    max-width: 18.75rem;
     margin: 0 auto;
-    border: 4px solid white;
+    border: 0.25rem solid white;
 }
 
 /* position du descriptif + couleur*/
@@ -274,7 +275,7 @@ img{
     background-color: deeppink;
     padding: 0.4rem;
     margin: 0 0.4rem;
-    border-radius: 3px;
+    border-radius: 0.188rem;
     font-weight: 600;
 }
 
@@ -296,13 +297,13 @@ img{
     /*Pour que la bordure s'adapte au texte : */
     display: inline-block;
     padding: 0.5rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /*descriptif (plot) espace autour*/
 .movie-info .plot{
     /*Pour que le texte soit mieux organisé : */
-    max-width: 400px;
+    max-width: 25rem;
     margin: 1rem auto;
 }
 
@@ -359,8 +360,8 @@ img{
 /*Connection : */
 .wrapper{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 1.25rem;
+    left: 1.25rem;
     animation: show_toast 1s ease forwards;
 }
 @keyframes show_toast {
@@ -371,7 +372,7 @@ img{
         transform: translateX(10%);
     }
     80%, 100%{
-        transform: translateX(20px);
+        transform: translateX(1.25rem);
     }
 }
 .wrapper.hide{
@@ -379,7 +380,7 @@ img{
 }
 @keyframes hide_toast {
     0%{
-        transform: translateX(20px);
+        transform: translateX(1.25rem);
     }
     40%{
         transform: translateX(10%);
@@ -392,11 +393,11 @@ img{
 }
 .wrapper .toast{
     background: black;
-    padding: 20px 15px 20px 20px;
-    border-radius: 10px;
-    border-left: 5px solid deeppink;
-    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
-    width: 430px;
+    padding: 1.25rem 0.938rem 1.25rem 1.25rem;
+    border-radius: 0.625rem;
+    border-left: 0.313rem solid deeppink;
+    box-shadow: 0.063rem 0.438rem 0.875rem -0.313rem rgba(0,0,0,0.15);
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -408,14 +409,15 @@ img{
     display: flex;
     align-items: center;
 }
+
 /*logo connection : */
 .content .icon{
-    font-size: 25px;
+    font-size: 1.563rem;
     color: #fff;
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 3.125rem;
     border-radius: 50%;
     background: deeppink;
 }
@@ -423,10 +425,10 @@ img{
     background: pink;
 }
 .content .details{
-    margin-left: 15px;
+    margin-left: 0.938rem;
 }
 .details span{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 .details p{
@@ -434,12 +436,12 @@ img{
 }
 .toast .close-icon{
     color: white;
-    font-size: 23px;
+    font-size: 1.438rem;
     cursor: pointer;
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     text-align: center;
-    line-height: 40px;
+    line-height: 2.5rem;
     border-radius: 50%;
     background: #ff5eca;
     transition: all 0.3s ease;
