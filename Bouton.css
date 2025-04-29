@@ -7,6 +7,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: Arial, sans-serif;
+    color:white;
 }
 
 /*Forme du cadre autour avec un style de néon : */
@@ -58,6 +59,7 @@ body {
     transform: translateX(100%);
 }
 
+/*Oppacité de l'animation : */
 @keyframes show {
     0%, 49.99% {
         opacity: 0;
@@ -71,6 +73,7 @@ body {
 
 form {
     background-color: pink;
+    color:black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,6 +116,7 @@ button:active {
 
 /*Centrer le blabla sur le cache : */
 .overlay-container {
+    color:black;
     position: absolute;
     top : 0;
     left : 50%;
@@ -187,7 +191,6 @@ button:active {
 
 /*Cercle autour du logo : */
 .social-container a {
-    text-decoration: none;
     border: 1px solid white;
     border-radius: 50%;
     display: inline-flex;
@@ -197,6 +200,7 @@ button:active {
     margin: 0 5px;
     height: 40px;
     width: 40px;
+    text-decoration: none;
 }
 
 h1 {
@@ -217,4 +221,4 @@ p {
     letter-spacing: 0.5px;
     /*Espace entre les blablas du cache : */
     margin: 20px 0 30px;
-}   
+}
