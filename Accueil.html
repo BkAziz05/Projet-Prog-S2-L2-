@@ -17,7 +17,6 @@
             <li><a href="Accueil.html">Welcome</a></li>
             <li><a href="Films.html">Movies</a></li>
             <li><a href="SeriesTV.html">Series</a></li>
-            <li><a href="graphiques.html">Statistics</a></li>
         </ul>
         <a href="Bouton.html" class="btn">Log in</a>
     </nav>
@@ -52,5 +51,41 @@
 <script src="script_connexion.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Bouton.js"></script>
+<script>
+    async function chargerFilms() {
+      try {
+        const response = await fetch('/api/films');
+        const films = await response.json();
+        
+        const container = document.createElement('div');
+        container.className = "container mt-5";
+  
+        films.forEach(film => {
+          const card = document.createElement('div');
+          card.className = "card mb-3";
+  
+          card.innerHTML = `
+            <div class="card-body">
+              <h5 class="card-title">${film.titre}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">${film.genre}</h6>
+              <p class="card-text">${film.description}</p>
+              <p><strong>Disponible sur :</strong> ${film.gratuit === 'oui' ? film.plateforme : `Prix : ${film.prix}€`}</p>
+            </div>
+          `;
+  
+          container.appendChild(card);
+        });
+  
+        document.body.appendChild(container);
+  
+      } catch (error) {
+        console.error('Erreur lors du chargement des films:', error);
+      }
+    }
+  
+    chargerFilms();
+  </script>
+  
 <script src="Bouton.js"></script>
 </html>
